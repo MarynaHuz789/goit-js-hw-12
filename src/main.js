@@ -68,10 +68,6 @@ async function loadMoreImages() {
 
         await toggleLoadeMoreBtn(images.length)
 
-    //     window.scrollBy({
-    //     top: cardHeight * 2,
-    //     behavior: 'smooth',
-    // });
     } catch (error) {
      hendleError(error)   
     }
