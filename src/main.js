@@ -153,9 +153,9 @@ function renderGallery(images, append = false) {
 
 function createMarkup(array) {
     return array.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `
-    <li class="description_img">
+<li class="description_img">
   <a href="${largeImageURL}">
-    <img src="${webformatURL}" alt="${tags}" width="350" height="250">
+    <img class="gallery_image" src="${webformatURL}" alt="${tags}" width="350" height="250">
   </a>
   <ul class="description_list">
     <li class="description_item">

@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet">
+    <link href="
+              https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+              " rel="stylesheet" />
   </head>
   <body>
-    <form class="js_form">
-      <input type="text" name="js_input" placeholder="Search images">
+    <div class="box"><form class="js_form">
+      <input type="text" name="js_input" placeholder="Search images...">
       <button type="submit">Search</button>
     </form>
+  </div>
     <ul class="js_list">
     </ul>
     <span class="loader"></span>
-    <button type="button" id="load_more_btn" style="display: none;">Load more</button>
-    <script type="module" src="./main.js"></script>
+    <div class="box">
+      <button type="button" id="load_more_btn" style="display: none;">Load more</button>
+    </div>
+  <script type="module" src="./main.js"></script>
   </body>
 </html>
